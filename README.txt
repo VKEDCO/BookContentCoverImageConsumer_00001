@@ -1,9 +1,9 @@
-1) Eclipse Project (BookContentAuthorImageConsumer_00001.rar) 
+1) Eclipse Project (BookContentCoverImageConsumer_00001.rar) 
 with an Android application that implements a consumer application 
 for the BookContentProvider_00001 content provider 
 (https://github.com/VKEDCO/BookContentProvider_000001).
 
-2) The consumer retrieves images of authors or book covers from
+2) The consumer retrieves images of book covers from
 the content provider.
 
 3) The consumer is implemented in BookContentProvider_00001.java.
