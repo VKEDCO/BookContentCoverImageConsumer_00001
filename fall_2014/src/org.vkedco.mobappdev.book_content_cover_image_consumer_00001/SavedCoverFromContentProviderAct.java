@@ -1,3 +1,5 @@
+package org.vkedco.mobappdev.book_content_cover_image_consumer_00001;
+
 /**
  ****************************************************
  * Bugs to vladimir dot kulyukin at gmail dot com
