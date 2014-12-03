@@ -1,3 +1,5 @@
+package org.vkedco.mobappdev.book_content_cover_image_consumer_00001;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
