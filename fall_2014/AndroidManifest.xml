@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.vkedco.mobappdev.book_content_cover_image_consumer_00001"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/background_004"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:name=".BookContentCoverImageConsumerApp">
+        <activity
+            android:name=".LauncherAct"
+            android:label="@string/act_select_isbn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GetCoverFromContentProviderByISBNAct"
+            android:label="@string/act_get_cover_from_cp_by_isbn" >
+            <intent-filter>
+                <action android:name="android.intent.action.book_cover_image_display" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SavedCoverFromContentProviderAct"
+            android:label="@string/act_saved_cover_from_cp" >
+            <intent-filter>
+                <action android:name="android.intent.action.book_cover_image_display" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GetSavedCoverFromContentProviderAct"
+            android:label="@string/act_get_saved_cover_from_cp" >
+            <intent-filter>
+                <action android:name="android.intent.action.book_cover_image_display_all" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CoverImageGalleryAct"
+            android:label="@string/act_cover_gallery" >
+            <intent-filter>
+                <action android:name="android.intent.action.book_cover_image_display_gallery" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
