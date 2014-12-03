@@ -8,16 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.Gallery;
 import android.widget.ImageView;
 
-// Back button is pressed - onPause() is guranteed to be called.
-// Home button is not sure - it depends on OEM. As soon as
-// you navigate away - onPause(), onStop(), onDestroy(). But
-// some OEM manufactures may decide to leave this activity
-// around. It does not have to create a Bundle, because
-// creating a Bundle is extra work. But as you navigate
-// farther and farther away the OEM may decide that onStop()
-// will be called.
-// onSaveInstanceState() is not part of the lifecycle.
-// This is part of the documentation.
+
 @SuppressWarnings("deprecation")
 public class CoverImageGalleryAct extends Activity {
 	Resources mRes = null;
